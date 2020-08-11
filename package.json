@@ -14,7 +14,10 @@
     "build:babel": "webpack-dev-server --config ./babel/webpack.config.js -w",
     "build:react": "webpack-dev-server --config ./react/webpack.config.js -w",
     "build:url": "webpack-dev-server --config ./url/webpack.config.js -w",
-    "build:prepros": "webpack-dev-server --config ./prepros/webpack.config.js -w"
+    "build:prepros": "webpack-dev-server --config ./prepros/webpack.config.js -w",
+    "build:prevent-dupli": "webpack --config ./prevent-dupli/webpack.config.js ",
+    "build:dll": "webpack --config ./dll/webpack.dll.config.js ",
+    "build:prevent-dupli-fast": "webpack --config ./dll/webpack.config.js "
   },
   "keywords": [
     "webpack"
