@@ -1,0 +1,30 @@
+{
+  "name": "curso-webpack",
+  "version": "1.0.0",
+  "description": "curso-webpack",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --entry ./index.js --output .bundle.js --mode development",
+    "build:local": "webpack --mode production",
+    "build:external": "webpack --config ./external/webpack.config.cualquiernombre.js",
+    "build:multi": "webpack --config ./multi-entry/webpack.config.cualquiernombre.js",
+    "build:css": "webpack --config ./css-loader/webpack.config.js",
+    "build:plugins": "webpack --config ./plugins/webpack.config.js",
+    "build:dev": "webpack-dev-server --config ./dev-server/webpack.config.js -w"
+  },
+  "keywords": [
+    "webpack"
+  ],
+  "author": "Juan Rios",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "css-loader": "4.2.1",
+    "html-webpack-plugin": "4.3.0",
+    "mini-css-extract-plugin": "0.10.0",
+    "style-loader": "1.2.1",
+    "webpack": "4.44.1",
+    "webpack-cli": "3.3.12",
+    "webpack-dev-server": "3.11.0"
+  }
+}
